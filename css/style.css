@@ -9,36 +9,62 @@ body{
     font-family: 'Fredoka', sans-serif;
 }
 
+.box-text{
+    color: white;
+}
+
+.box-bg{
+    background-color: black;
+}
+
+.link-color{
+    color: #60c9ef;
+}
+
 .clearfix::after{
     content: "";
     display: table;
     clear: both;
 } 
 
-.wrapper{
+.container{
     max-width: 1200px;
-    margin: 50px auto;
+    margin: 0px auto;
 }
 
 
 .debug{
-    border: 5px solid black;
-    padding: 10px;
+    border: 1px solid black; 
 
-}
+} 
 
-:root{
-    --width-img: 120px;
-    --margin: 5px;
-}
 
 .image-setup{
-    width: var(--width-img);
-    margin: var(--margin);
+    object-fit: cover;
+    width: 100px;
+    display: flex;
 }
 
+.box-display{
+    width: calc(100% / 3 );
+    padding:20px;
 
+}
 
+.shadow{
+    box-shadow: 2px 2px 2px 2px lightgrey;
+}
 .move-left{
-    float: left;
+    float:left;
 }
+
+.info {
+    min-width: 250px;
+    min-height: 102px;
+}
+
+.info *{
+    padding: 5px;
+}
+
+
