@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Fredoka', sans-serif;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+} 
+
+.wrapper{
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+
+.debug{
+    border: 5px solid black;
+    padding: 10px;
+
+}
+
+:root{
+    --width-img: 120px;
+    --margin: 5px;
+}
+
+.image-setup{
+    width: var(--width-img);
+    margin: var(--margin);
+}
+
+
+
+.move-left{
+    float: left;
+}
